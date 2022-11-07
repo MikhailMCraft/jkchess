@@ -1,0 +1,23 @@
+@import '../../global.scss';
+
+.select {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    button {
+        width: 100%;
+        height: 50px;
+        padding: 15px;
+        background-color: $primary;
+        color: $text;
+        &:hover {
+            color: $accent;
+        }
+        &.active {
+            background-color: $accent;
+            color: $text;
+        }
+    }
+}

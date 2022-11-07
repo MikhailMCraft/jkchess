@@ -1,0 +1,35 @@
+@import '../../global.scss';
+
+#play {
+    display: flex;
+    flex-direction: column;
+    .stats {
+        padding: 15px;
+        width: 500px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $secondary;
+        div {
+            display: flex;
+            align-items: center;
+            .clock {
+                color: $text;
+            }
+            .draw, .resign {
+                margin-right: 15px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: crimson;
+                color: $text;
+                &:hover {
+                    opacity: $opacity;
+                }
+            }
+        }
+    }
+}

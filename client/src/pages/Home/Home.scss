@@ -1,0 +1,63 @@
+@import '../../global.scss';
+
+#home {
+    padding: 30px;
+    width: calc(100vw - 60px);
+    max-width: 800px;
+    max-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    background-color: $secondary;
+    .title {
+        text-align: left;
+        margin-bottom: 30px;
+        color: $text;
+    }
+    .description {
+        margin-bottom: 30px;
+        line-height: 150%;
+        color: $text;
+        a {
+            color: $accent;
+            display: inline-block;
+            margin-left: 5px;
+            &:hover {
+                opacity: $opacity;
+            }
+        }
+    }
+    .game-name {
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 300px;
+        input {
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            background-color: $primary;
+            color: $text;
+            border: 1px solid $primary;
+            &:focus, &.error {
+                border-color: $accent;
+            }
+        }
+        .error {
+            color: $accent;
+        }
+    }
+    .play {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        padding: 15px;
+        background-color: crimson;
+        color: $text;
+        &:hover {
+            opacity: $opacity;
+        }
+    }
+}
